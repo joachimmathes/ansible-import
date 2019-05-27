@@ -1,0 +1,3 @@
+---
+- debug:
+    msg: This is roles/foo/tasks/baz.yml

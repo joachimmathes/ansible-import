@@ -1,0 +1,5 @@
+---
+- debug:
+    msg: This is roles/foo/tasks/main.yml
+
+- import_tasks: bar.yml

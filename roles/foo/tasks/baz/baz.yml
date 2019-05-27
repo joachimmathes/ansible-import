@@ -1,0 +1,9 @@
+---
+- debug:
+    msg: This is roles/foo/tasks/baz/baz.yml
+- set_fact:
+    run: "{{ run | default(0) | int + 1 }}"
+- debug:
+    msg: ">>>>>>>>>>>>>>>>>>>> RUN {{ run }} <<<<<<<<<<<<<<<<<<<<"
+
+- import_tasks: ../baz.yml
